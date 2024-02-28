@@ -2,11 +2,11 @@ package com.kkongdak.authentication.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 public class AddAccountRequest {
