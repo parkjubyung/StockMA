@@ -66,7 +66,6 @@ public class AccountControllerTest {
 
         assertThat(accountList.size()).isEqualTo(1);
         assertThat(accountList.get(0).getEmail()).isEqualTo(email);
-        assertThat(bCryptPasswordEncoder.matches(password, accountList.get(0).getPassword()));
+        assertThat(bCryptPasswordEncoder.matches(password, accountList.get(0).getPassword())).isTrue();
     }
-
 }
